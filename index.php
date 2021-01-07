@@ -1,3 +1,3 @@
-<?php include_once(“main.html”); ?>
+<?php Header(“main.html”); ?>
 
 <?php echo "<p>Copyright</p>" ?>
