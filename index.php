@@ -8,9 +8,9 @@
         <link rel="stylesheet" type="text/css" href="./css/style.css" />
         <link rel="stylesheet" type="text/css" href="./css/flexslider.css" />
 
-        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     </head>
     <body>
 
