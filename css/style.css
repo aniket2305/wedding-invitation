@@ -2,6 +2,115 @@ html, body {
     height: 100%;
 }
 
+.page-wrap {
+    height: 100%;
+}
+
+body{
+	font-family: 'Arvo', serif;	
+	color:#6a6a6a;
+	font-size:15px;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Oswald', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+	color:#333333;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, 
+h4 a:hover, h5 a:hover, h6 a:hover{
+	color:#f0394d;
+}
+
+h1, h2, h3,
+.h1, .h2, .h3{
+	 margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h4, h5, h6
+.h4, .h5, .h6{
+	 margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1, .h1{
+	font-size:40px;
+}
+
+h2, .h2{
+	font-size:30px;
+}
+
+h3, .h3{
+	font-size:20px;
+}
+
+h4, .h4{
+	font-size:16px;
+}
+
+h5, .h5{
+  font-size: 14px;
+}
+
+h6, .h6{
+  font-size: 12px;
+}
+
+h1.inline, h2.inline, h3.inline,
+h4.inline, h5.inline, h6.inline{
+	display:inline;
+	vertical-align:middle; 
+}
+
+p{
+	font-family: 'Arvo', serif;	
+	font-size:15px;
+	line-height:26px;
+	margin-bottom:25px;
+}
+
+p.lead{
+	font-size:19px;
+	line-height:28px;
+	font-weight:normal;
+}
+
+a{
+	text-decoration:none;
+	color:#6a6a6a;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+.clearboth{
+	clear:both;
+}
+
+.no-padding{
+	padding:0;
+}
+
+.no-margin{
+	margin:0;
+}
+
+img.fullwidth{
+	width:100%;
+}
+
+img.with-border{
+	border:1px solid #6a6a6a;
+}
+
+
 /*===============================================*/
 /* 06. MAIN-SLIDER					 		 	 */
 /*===============================================*/
@@ -143,23 +252,24 @@ html, body {
 	-ms-transform: rotate(-10deg); /* IE 9 */
     -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
     transform: rotate(-10deg);
-	padding-top:100px;
+	padding-top:4em;
 	padding-right:50px;
 	margin-bottom:20px;
 }
 
 #save{
-	font-size:75px; 
-	line-height:50px
+	font-size:4em; 
+	line-height:1;
 }
 
 #the-date{
-	font-size:62px;
+    font-size:3.5em;
+    line-height: 1;
 }
 
 #date{
-	font-size:47px; 
-	line-height:40px;
+	font-size:2.5em; 
+	line-height:1;
 }
 
 .pink-dot{
@@ -181,27 +291,44 @@ html, body {
 	-webkit-transform: translateZ(0);
 }
 
+.image-divider.auto-height, .video-divider.auto-height {
+    height: 100%;
+    width: 100%;
+    padding: 100px 0;
+}
+.image-divider {
+    position: relative;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-attachment: scroll;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    color: #FFF;
+    -webkit-backface-visibility: hidden;
+}
+
 /* 07.2.11 Banner Text				 			 */
 /* ----------------------------------------------*/
 .banner-text{
 	display:inline-block;
 	font-family: 'Oswald', sans-serif; 
 	margin:auto;
-	margin-top:30px;
-	margin-bottom:30px; 	
+	margin-top:2.5em;
+	margin-bottom:2.5em; 	
 	text-align:center
 }
 
 .banner-text.small{
-	padding:2px 30px;  
+	padding:0.2em 1em;  
 }
 
 .banner-text.medium{
-	padding:2px 50px;  
+    padding:0.2em 2em;
+    letter-spacing: 0.2em;
 }
 
 .banner-text.large{
-	padding:2px 70px;  
+	padding:0.2em 3em;  
 }
 
 .banner-text.full{
@@ -272,8 +399,8 @@ html, body {
 	height:100%; 
 	width:100%;
 	margin:0 auto; 
-	margin-top:20px;
-	margin-bottom:20px;
+	margin-top:1em;
+	margin-bottom:1em;
 	text-align:center;
 }
 
@@ -291,22 +418,30 @@ html, body {
 	border-top:solid 2px #e1dddd;
 }
 
-.pink-heart{
-	color:#f0394d; 
-	font-size:18px; 
-	position:relative; 
-    z-index:3;
-    font-size: 18px !important;
+.banner-heart {
+	font-size: 18px !important;
+	position:relative;
+}
 
+.banner-heart.pink-heart {
+    z-index:3;
+}
+
+.banner-heart.white-heart {
+    z-index:2;
+    margin-left:-8px;
+}
+
+.pink-heart{
+    z-index:3;
 }
 
 .white-heart{
 	color:#FFF; 
-	font-size:18px; 
-	margin-left:-8px; 
-	position:relative;
-    z-index:2;
-    font-size: 18px !important;
+}
+
+.pink-heart{
+	color:#f0394d; 
 }
 
 .grey-heart{
@@ -317,9 +452,478 @@ html, body {
     z-index:2;
 }
 
+.small-heart-icon {
+    font-size: 0.5em !important;
+    vertical-align: middle;
+}
+
+/*===============================================*/
+/* 09. PHOTO ITEM								 */
+/*===============================================*/
+.photo-item {
+	position:relative;
+	overflow:hidden;
+}
+
+.photo-item.frame-border {
+	background-color:#FFF; 
+	border:18px solid #FFF;
+}
+
+/* ----------------------------------------------*/
+/* 09.1 Image 									 */
+/* ----------------------------------------------*/
+.photo-item img {
+	width:100%;
+}
+
+/* ----------------------------------------------*/
+/* 09.2 Layer 								 	 */
+/* ----------------------------------------------*/
+.photo-item .layer {
+	position: absolute; 
+	margin: auto;
+	top: 0; 
+	right: 0; 
+	bottom: 0;
+	left: 0;
+	width:100%;
+	height:100%;
+}
+
+.photo-item .layer.wh100{
+	width:100%;
+	height:100%; 
+}
+
+.photo-item .layer.wh95{
+	width:95%;
+	height:95%; 
+}
+
+
+/* 09.2.1 Layer : Second Image   				 */
+/* ----------------------------------------------*/
+.photo-item .layer.second-image{
+	opacity: 0; 
+}
+
+
+/* 09.2.2 Layer : Black Overlay  				 */
+/* ----------------------------------------------*/
+.photo-item .layer.opacity-black-overlay{
+	background-color: rgba(0, 0, 0, 0.4);
+	opacity: 0.3; 
+}
+
+.photo-item .layer.hidden-black-overlay{
+	background-color: rgba(0, 0, 0, 0.4);
+	opacity: 0; 
+}
+
+/* 09.2.3 Layer : Photo Caption  				 */
+/* ----------------------------------------------*/
+.photo-item .layer.photo-caption{
+	opacity: 1; 
+}
+
+.photo-item .layer.hidden-photo-caption{
+	opacity: 0; 
+}
+
+.photo-item .layer.border-photo-caption{
+	opacity: 1;
+	border:1px solid #FFF; 
+}
+
+.photo-item .layer.hidden-border-photo-caption{
+	opacity: 0;
+	border:1px solid #FFF; 
+}
+
+/* 09.2.4 Layer : Icon / Button Link		 	 */
+/* ----------------------------------------------*/
+.photo-item .layer.link{
+	opacity: 1;
+}
+
+.photo-item .layer.hidden-link{
+	opacity: 0;
+}
+
+.photo-item:hover .layer.hover-animation.fade-in{
+	opacity: 1; 
+}
+
+.photo-item:hover .layer.hover-animation.half-fade-in{
+	opacity: 0.3; 
+}
+
+.photo-item:hover .layer.hover-animation.fade-out{
+	opacity: 0; 
+}
+
+/* ----------------------------------------------*/
+/* 09.3 on Hover Animation					 	*/
+/* ----------------------------------------------*/
+.photo-item img.hover-animation, .photo-item:hover img.hover-animation{
+	-webkit-transition: all 0.5s; 
+		-ms-transition: all 0.5s;
+		 -o-transition: all 0.5s;
+			transition: all 0.5s;
+	/*The transition will be disabled on script.js for tablet/mobile*/		
+}
+
+.photo-item .layer.hover-animation, .photo-item:hover .layer.hover-animation {
+	-webkit-transition: all 0.5s; 
+		-ms-transition: all 0.5s;
+		 -o-transition: all 0.5s;
+			transition: all 0.5s;
+	/*The transition will be disabled on script.js for tablet/mobile*/	
+}
+
+/* 09.3.1 on Hover Animation Duration		 	 */
+/* ----------------------------------------------*/
+.photo-item:hover .layer.hover-animation.duration1,
+.photo-item:hover img.hover-animation.duration1{
+	transition-duration:0.5s;
+}
+
+.photo-item:hover .layer.hover-animation.duration2,
+.photo-item:hover img.hover-animation.duration12{
+	transition-duration:1s;
+}
+
+.photo-item:hover .layer.hover-animation.duration3,
+.photo-item:hover img.hover-animation.duration3{
+	transition-duration:1.5s;
+}
+
+.photo-item:hover .layer.hover-animation.duration4,
+.photo-item:hover img.hover-animation.duration4{
+	transition-duration:2s;
+}
+
+.photo-item:hover .layer.hover-animation.duration5,
+.photo-item:hover img.hover-animation.duration5{
+	transition-duration:2.5s;
+}
+
+/* 09.3.2 on Hover Animation Delay		 	 	 */
+/* ----------------------------------------------*/
+.photo-item:hover .layer.hover-animation.delay1,
+.photo-item:hover img.hover-animation.delay1{
+	transition-delay:0.5s;
+}
+
+.photo-item:hover .layer.hover-animation.delay2,
+.photo-item:hover img.hover-animation.delay2{
+	transition-delay:1s;
+}
+
+.photo-item:hover .layer.hover-animation.delay3,
+.photo-item:hover img.hover-animation.delay3{
+	transition-delay:1.5s;
+}
+
+.photo-item:hover .layer.hover-animation.delay4,
+.photo-item:hover img.hover-animation.delay4{
+	transition-delay:2s;
+}
+
+.photo-item:hover .layer.hover-animation.delay5,
+.photo-item:hover img.hover-animation.delay5{
+	transition-delay:2.5s;
+}
+
+
+/* 09.3.3 on Hover Zoom In					 	 */
+/* ----------------------------------------------*/
+.photo-item:hover img.hover-animation.image-zoom-in {
+	-webkit-transform: scale(1.1); 
+		-ms-transform: scale(1.1);
+		 -o-transform: scale(1.1);  
+			transform: scale(1.1);		
+}
+
+/* 09.3.4 on Hover Zoom In and Rotate	 	 	*/
+/* ----------------------------------------------*/
+.photo-item:hover img.hover-animation.image-zoom-rotate {
+	-webkit-transform: rotate(7deg) scale(1.1);
+		-ms-transform: rotate(7deg) scale(1.1);
+		 -o-transform: rotate(7deg) scale(1.1);  
+			transform: rotate(7deg) scale(1.1);			
+}
+
+/* 09.3.5 on Hover Fade Out				 		 */
+/* ----------------------------------------------*/
+.photo-item:hover img.hover-animation.image-fade-out {
+	opacity:0;
+}
+
+/* 07.2.6  Align Middle Wrapper					 */
+/* ----------------------------------------------*/
+.alignment{
+	position:absolute;
+	display:table;
+	height:100%;
+	width:100%;
+}
+
+.v-align{
+	display:table-cell;	
+}
+
+.center-middle{
+	vertical-align:middle;
+	text-align:center;
+}
+
+.center-top{
+	vertical-align:top;
+	text-align:center;
+}
+
+.center-bottom{
+	vertical-align:bottom;
+	text-align:center;
+}
+
+/* 07.2.10 BUTTON					 			 */
+/* ----------------------------------------------*/
+a.de-button, span.de-button, input[type=submit]{
+	display:inline-block; 	
+	margin:0 auto; 
+	margin-top:20px; 
+	background-color:#FFF; 
+	font-family: 'Oswald', sans-serif; 	
+	border:solid 1px #6a6a6a
+}
+
+a.de-button.outline, span.de-button.outline, input[type=submit].outline{
+	background-color:transparent; 
+	border:solid 1px #FFF;
+	color:#FFF;
+}
+
+a.de-button.reverse, span.de-button.reverse, input[type=submit].reverse{
+	background-color:#f0394d; 
+	border:solid 1px #f0394d;
+	color:#FFF;
+}
+
+a.de-button.small, span.de-button.small, input[type=submit].small{
+	padding:8px 26px; 
+	font-size:14px; 
+}
+
+a.de-button.medium, span.de-button.medium, input[type=submit].medium{
+	padding:10px 50px; 
+	font-size:16px; 
+}
+
+a.de-button.large, span.de-button.large, input[type=submit].large{
+	padding:14px 70px; 
+	font-size:20px; 
+}
+
+a.de-button:hover, input[type=submit]:hover{
+	background-color:#f0394d;
+	border-color:#f0394d;
+	color:#FFF;
+	text-decoration:none;
+}
+
+a.de-button.reverse:hover, input[type=submit].reverse:hover{
+	background-color:#FFF;
+	border-color:#FFF;
+	color:#6a6a6a;
+	text-decoration:none;
+	border:solid 1px #6a6a6a
+}
+
+input[type=submit]:disabled, input[type=submit]:hover:disabled{
+   background-color:#CCC !important;
+   border:solid 1px #CCC !important;
+   color:#FFF !important;;
+}
+
+
+/* ----------------------------------------------*/
+/* 12.1 Couple Section							 */
+/* ----------------------------------------------*/
+
+#couple{
+	padding:140px 0 100px 0;
+}
+
+.couple-name{
+	font-family: 'Pacifico', cursive; 
+	font-size:41px; 
+	padding-top:100px;
+	color:#FFF; 
+	line-height:41px; 
+	-ms-transform: rotate(-10deg); 
+	-webkit-transform: rotate(-10deg); 
+	transform: rotate(-10deg)
+}
+
+.couple-excerpt{
+	margin-top:40px;
+	margin-bottom:40px;
+}
+
+/* ----------------------------------------------*/
+/* 12.2 Location & Countdown Section			 */
+/* ----------------------------------------------*/
+
+#counting-down{
+	text-align:center; 
+	color:#FFF; 
+	font-family: 'Pacifico';
+	-ms-transform: rotate(-10deg); 
+	-webkit-transform: rotate(-10deg); 
+	transform: rotate(-10deg);
+	padding-right:30px;
+	margin-top:0px;
+	margin-bottom:25px;
+}
+
+#counting{
+	font-size:65px; 
+	line-height:50px
+}
+
+#down{
+	font-size:55px; 
+	line-height:65px;
+}
+
+.simple-countdown{
+    width:80%;
+    max-width: 500px;
+	margin:0 auto; 
+	margin-top:25px
+}
+
+.simple-countdown.is-countdown {
+	border: none;
+	background-color:transparent;
+	color:#f0394d;
+	font-family: 'Oswald', sans-serif; 
+	font-size:13px;
+}
+
+.simple-countdown .countdown-amount {
+	display:inline-block;
+	font-size:18px;
+	letter-spacing:2px;
+}
+.simple-countdown .countdown-period {
+    display:inline-block;
+	font-size:18px;
+}
+
+.is-countdown {
+	border: 1px solid #ccc;
+	background-color: #eee;
+}
+.countdown-rtl {
+	direction: rtl;
+}
+.countdown-holding span {
+	color: #888;
+}
+.countdown-row {
+	width: 100%;
+	padding: 0px 2px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+}
+
+.countdown-section {
+	font-size: 75%;
+    text-align: center;
+    background-color: #f0394d;
+    color: #fff;
+    padding: .5em;
+    flex: 0 0 20%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2em 0;
+}
+.countdown-amount {
+    font-size: 200%;
+}
+.countdown-period {
+    display: block;
+}
+.countdown-descr {
+	display: block;
+	width: 100%;
+}
+
 
 @media screen and (max-width: 1200px) {
     .slide-title-inner-wrapper {
         width: 100%;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .page-wrap {
+        font-size: 1.69vw;
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .page-wrap {
+        font-size: calc(16px + (32 - 16) * ((100vh - 320px) / (720 - 320)));
+    }
+
+    #save-the-date {
+        padding-top: 3em;
+    }
+
+    #save {
+        font-size: 3em;
+    }
+
+    #the-date {
+        font-size: 2.5em;
+    }
+
+    #date {
+        font-size: 2em;
+    }
+
+    .banner-text {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .heart-divider {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .page-wrap {
+        font-size: calc(16px + (32 - 16) * ((100vw - 320px) / (720 - 320)));
+    }
+
+    .banner-text.medium h4{
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .page-wrap {
+        font-size: 3vmin;
     }
 }
