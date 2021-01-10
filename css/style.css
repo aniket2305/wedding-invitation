@@ -13,7 +13,7 @@ body{
 }
 
 h1,h2,h3,h4,h5,h6{
-	font-family: 'Oswald', sans-serif;
+	font-family: "Great Vibes", cursive;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -316,6 +316,10 @@ img.with-border{
 	margin-top:2.5em;
 	margin-bottom:2.5em; 	
 	text-align:center
+}
+
+.banner-text h4{
+    font-family: 'Oswald', sans-serif;
 }
 
 .banner-text.small{
@@ -754,7 +758,7 @@ input[type=submit]:disabled, input[type=submit]:hover:disabled{
 /* ----------------------------------------------*/
 
 #couple{
-	padding:140px 0 100px 0;
+	padding:100px 0 100px 0;
 }
 
 .couple-name{
@@ -1202,6 +1206,10 @@ footer .image-divider {
 
     .banner-text.medium h4{
         font-size: 0.6em;
+    }
+
+    .photo-item.frame-border {
+        border: 10px solid #fff;
     }
 }
 
