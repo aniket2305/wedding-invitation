@@ -83,5 +83,13 @@ function getTimeRemaining(endtime) {
             			offset: '90%'
         			});
         	});
-		}	
+    }
+    
+    $(".family-carousel").owlCarousel({
+      items : 1,
+      singleItem : true,
+      autoHeight: true,
+      pagination : false,
+      autoPlay : true
+    });
   })
