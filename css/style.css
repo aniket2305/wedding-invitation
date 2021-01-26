@@ -1411,6 +1411,10 @@ footer .image-divider {
 	.responsive-margin {
 		margin-bottom: 2em;
 	}
+
+	.image-divider {
+		background-attachment: scroll;
+	}
 }
 
 @media screen and (max-width: 768px) and (orientation: portrait) {
@@ -1448,6 +1452,10 @@ footer .image-divider {
 
 	.rsvp-block { 
 		width: 90%;
+	}
+
+	.image-divider {
+		background-attachment: scroll;
 	}
 }
 
