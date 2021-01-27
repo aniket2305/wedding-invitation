@@ -121,7 +121,7 @@
                                         <p><span>Groom</span></p>
                                     </div>
                                     <div class="the-couple-img">
-                                        <div class="person-image img-circle"> <img src="images/aniket.jpg"
+                                        <div class="person-image img-circle"> <img src="images/aniket1.jpg"
                                                 alt="the-couple" class="img-circle img-responsive">
                                             <div class="the-couple-img-hover">
                                                 <div class="social text-center"><a class="fb-color"
@@ -261,13 +261,6 @@
                                             <div class="the-couple-img">
                                                 <div class="person-image img-circle"> <img src="images/a-papa.jpg"
                                                         alt="the-couple" class="img-responsive">
-                                                    <div class="the-couple-img-hover">
-                                                        <div class="social text-center"><a class="fb-color"
-                                                                href="javascript:void(0)"><i
-                                                                    class="fa fa-facebook"></i></a><a class="tw-color"
-                                                                href="javascript:void(0)"><i
-                                                                    class="fa fa-twitter"></i></a></div>
-                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="the-couple-data">
@@ -280,13 +273,6 @@
                                             <div class="the-couple-img">
                                                 <div class="person-image img-circle"> <img src="images/a-mummi.jpg"
                                                         alt="the-couple" class="img-circle img-responsive">
-                                                    <div class="the-couple-img-hover">
-                                                        <div class="social text-center"><a class="fb-color"
-                                                                href="javascript:void(0)"><i
-                                                                    class="fa fa-facebook"></i></a><a class="tw-color"
-                                                                href="javascript:void(0)"><i
-                                                                    class="fa fa-twitter"></i></a></div>
-                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="the-couple-data">
@@ -310,13 +296,6 @@
                                             <div class="the-couple-img">
                                                 <div class="person-image img-circle"> <img src="images/b-papa.jpg"
                                                         alt="the-couple" class="img-responsive">
-                                                    <div class="the-couple-img-hover">
-                                                        <div class="social text-center"><a class="fb-color"
-                                                                href="javascript:void(0)" target="_blank"><i
-                                                                    class="fa fa-facebook"></i></a><a class="tw-color"
-                                                                href="javascript:void(0)" target="_blank"><i
-                                                                    class="fa fa-twitter"></i></a></div>
-                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="the-couple-data">
@@ -329,13 +308,6 @@
                                             <div class="the-couple-img">
                                                 <div class="person-image img-circle"> <img src="images/b-mummi.jpg"
                                                         alt="the-couple" class="img-responsive">
-                                                    <div class="the-couple-img-hover">
-                                                        <div class="social text-center"><a class="fb-color"
-                                                                href="javascript:void(0)" target="_blank"><i
-                                                                    class="fa fa-facebook"></i></a><a class="tw-color"
-                                                                href="javascript:void(0)" target="_blank"><i
-                                                                    class="fa fa-twitter"></i></a></div>
-                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="the-couple-data">
@@ -361,7 +333,9 @@
                         <div class="rsvp-block">
                             <!-- SECTION TITLE -->
                             <div class="col-md-offset-1 col-md-10 text-center">
-
+                                <div id="successMsg">
+                                    Thank You
+                                </div>
                                 <div class="section-title animation fadeInUp">
                                     <h2>
                                         RSVP
@@ -376,7 +350,7 @@
                                 </div>
                             </div>
 
-                            <form role="form" name="contactform">
+                            <form role="form" name="contactform" id="contactform" method="post" novalidate>
                                 <div class="row">
                                     <div id="name-group" class="form-group col-xs-12">
                                         <label for="inputName">Name</label>
@@ -399,6 +373,7 @@
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                             <option value="4">4</option>
+                                            <option value="5">5</option>
                                         </select>
                                     </div>
                                     <div id="attending-group" class="form-group col-xs-12 col-md-6 col-sm-6">
@@ -738,6 +713,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
 
     <script type="text/javascript" src="./js/jquery.flexslider.js"></script>
     <script type="text/javascript" src="./js/device.js"></script>

@@ -92,4 +92,56 @@ function getTimeRemaining(endtime) {
       pagination : false,
       autoPlay : true
     });
+
+    var validator = $("#contactform").validate({
+      rules: {
+        inputName: "required",
+        inputEmail: {
+          email: true,
+          required: true
+        },
+        selectGuests: {
+          required: true
+        },
+        selectAttending: {
+          required: true
+        }
+
+      },
+      
+      messages: {
+        inputName: "",
+        inputEmail: "",
+        selectGuests: "",
+        selectAttending: ""
+      },
+         submitHandler: function(form) {
+          
+              var name = $("#inputName").val();
+              var email = $("#inputEmail").val();
+              var selectGuests =$("#selectGuests").val();
+              var selectAttending = $("#selectAttending").val();
+              
+            var dataString = 'name=' + name + '&email=' + email + '&guests=' + selectGuests + '&attanding=' + selectAttending ;
+                $.ajax({
+                  type : "POST",
+                  url : "thanks-contact.php",
+                  data : dataString,
+                  cache : false,
+                  success : function() {
+            
+                      $("#successMsg").fadeIn(400);
+                      int_id = setInterval(function(){hideSuccess()},5000);
+                  }
+                });
+              return false;
+          }
+          
+    });
+    
+    function hideSuccess(){
+        $("#successMsg").fadeOut(400);	
+        clearInterval(int_id);
+    }
+
   })

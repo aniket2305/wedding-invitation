@@ -1197,6 +1197,14 @@ a:hover .de-icon.circle.reverse, a:hover .de-icon.rounded.reverse, a:hover .de-i
 	font-weight: normal;
 }
 
+.rsvp-block label.error {
+	display: none !important;
+}
+
+.rsvp-block .form-control.error {
+	border-color: #f0394d;
+}
+
 .rsvp-button {
     letter-spacing: 3px;
     background-color: #f0394d;
@@ -1204,6 +1212,10 @@ a:hover .de-icon.circle.reverse, a:hover .de-icon.rounded.reverse, a:hover .de-i
     text-decoration: none !important;
 	border: none;
 	margin-top: 10px;
+	color: #ffffff;
+}
+
+.rsvp-button:focus, .rsvp-button:hover {
 	color: #ffffff;
 }
 
@@ -1354,6 +1366,10 @@ footer .image-divider {
 	top: 100px;
 }
 
+#successMsg {
+	display: none;
+}
+
 #location-countdown .image-divider.auto-height {
 	padding-top: 60px;
 }
@@ -1449,6 +1465,12 @@ footer .image-divider {
 
 	.image-divider {
 		background-attachment: scroll;
+	}
+
+	.address-panel {
+		top: auto;
+		bottom: 100px;
+		padding: 1em;
 	}
 }
 
