@@ -93,7 +93,7 @@ function getTimeRemaining(endtime) {
       autoPlay : true
     });
 
-    var validator = $("#contactform").validate({
+    $("#contactform").validate({
       rules: {
         inputName: "required",
         inputEmail: {
@@ -131,7 +131,12 @@ function getTimeRemaining(endtime) {
                   success : function() {
             
                       $("#successMsg").fadeIn(400);
-                      int_id = setInterval(function(){hideSuccess()},5000);
+                      var int_id = setInterval(function(){hideSuccess()},5000);
+
+                      function hideSuccess(){
+                        $("#successMsg").fadeOut(400);	
+                        clearInterval(int_id);
+                      }
                   }
                 });
               return false;
@@ -139,9 +144,6 @@ function getTimeRemaining(endtime) {
           
     });
     
-    function hideSuccess(){
-        $("#successMsg").fadeOut(400);	
-        clearInterval(int_id);
-    }
+
 
   })
